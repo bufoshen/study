@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+<style>
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+}
+.wrap div {
+    width: 25%;
+    height: 200px;
+    background-color: #ccc;
+    text-align: center;
+    float: left;
+    margin-bottom: 2px;
+}
+.wrap div:nth-child(odd) {
+    background-color: #eee;
+}
+@media screen and (max-width: 600px) {
+    .wrap div {
+        width: 50%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</div>
+</body>
+</html>
