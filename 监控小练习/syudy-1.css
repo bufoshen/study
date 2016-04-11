@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	width:90%;
+	height:auto;
+	background:url(1.jpg);
+}
+div
+{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	background-color:rgba(3,223,220,0.2);
+	border-radius:5px;
+	position:relative;
+	border:1px solid rgba(3,223,220,0.82);
+	position:relative;
+	min-width:950px;
+	
+	
+	
+}
+table{ 
+      color:rgba(249,249,249,0.8);
+	  border-radius:5px;
+      font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 9px;
+	  height:150px;
+	  table-layout:fixed;
+	  min-width:950px;
+	  
+	  	 
+	  
+	  
+
+	
+}
+td{ 
+
+  text-align:center;
+  margin-top:20px;
+  border:1px solid rgba(3,223,220,0.2);
+  min-width:75px;
+  
+  
+     
+}
+img
+{
+	max-width:16px;
+}
+	

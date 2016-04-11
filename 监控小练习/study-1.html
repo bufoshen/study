@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="syudy-1.css">
+
+
+<script src="jquery-2.2.3.js"></script>
+<script type="text/javascript">
+$(function(){  
+$.ajax(  
+    {  
+        type:'get',  
+        url : 'http://182.92.227.171:3280/peiyou/roomstatus?method=monitor',  
+        dataType : 'jsonp',   
+        success  : function(data) {
+			var _data = data.data[0];
+			var _html = '';
+			_html += '<tr>';
+			_html += '	<td>北京</td>';
+			_html += '	<td>丹棱</td>';
+			_html += '	<td><img src="images/'+ _data.server_01 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.server_02 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.room_01 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.room_02 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.room_03 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.room_04 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.room_05 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.room_06 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.room_07 +'.png"></td>';
+			_html += '	<td><img src="images/'+ _data.room_08 +'.png"></td>';
+			_html += '</tr>';
+	
+			$("table").append(_html);
+			
+		
+
+		}	
+}); 
+}) ;  
+ 
+</script>
+<title>study</title>
+</head>
+<body>
+<div>
+<table class="table table-bordered ">
+    <tr>
+        <td>地区 </td>
+        <td>单元 </td>
+        <td>server1</td>
+        <td>server2</td>
+        <td>直播01</td>
+        <td>直播02</td>
+        <td>直播03</td>
+        <td>直播04</td>
+        <td>直播05</td>
+        <td>直播06</td>
+        <td>直播07</td>
+        <td>直播08</td>
+    </tr>
+   
+</table>
+</div>
+
+</body>
+</html>
