@@ -16,21 +16,21 @@ div
 	position:relative;
 	border:1px solid rgba(3,223,220,0.82);
 	position:relative;
-	min-width:950px;
+	
 	
 	
 	
 }
 table{ 
       color:rgba(249,249,249,0.8);
-	  border-radius:5px;
       font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 9px;
 	  height:150px;
 	  table-layout:fixed;
-	  min-width:950px;
+	  border-collapse:collapse;
+	  padding:0px;
+	  width:100%;
 	  
-	  	 
 	  
 	  
 
@@ -41,7 +41,7 @@ td{
   text-align:center;
   margin-top:20px;
   border:1px solid rgba(3,223,220,0.2);
-  min-width:75px;
+
   
   
      
