@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>试题</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#selete_kemu").click(function(){
+        var  div_1=$("<div id='menu'><div  class='daohang'><p>选择科目</p></div><div  class='xuanzekemu'><div class='grade'><div class='chuzhong'><p>初中</p></div> <div class='gaozhong'><p>高中</p></div></div><div  class='kemu'><div><p>语文</p><p>数学</p><p>英语 </p><p> 物理</p><p>化学</p><br><p>生物</p><p>地理</p><p>历史</p><p>思想品德</p></div><div><p>语文</p><p>数学</p> <p>英语 </p> <p> 物理</p><p>化学</p><br><p>生物</p><p>地理</p><p>历史</p><p>思想品德</p></div></div></div> ");
+      $("body").append(div_1);
+      $(".kemu div p").each(function(){
+       $(this).click(function(){
+      $(this).css('color', '#4697e5');
+      $(this).siblings().css('color','#222');
+      $(this).parents().siblings().children().css('color','#222');
+      $(this).dblclick(function(){
+        $("div").remove("#menu");
+      })
+       })
+      })
+
+     })
+      })
+
+
+
+
+
+  </script>
+  <style type="text/css">
+  body{
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(241,244,246);
+    position: relative;
+  }
+  footer{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-bottom: 0px;
+  }
+#header
+{
+  width: 1510px;
+  height: 60px;
+  background-image: url("images/bg1.jpg");
+  position: relative;
+}
+.logo_shiti
+{
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 16px;
+}
+.logo_pic{
+position: absolute;
+right:154px;
+top:16px;
+}
+.logo_pic img{
+margin-right: 22px;
+}
+.logo_search{
+  position: absolute;
+  top: 16px;
+ left: 660px;
+}
+.logo_search_content{
+float: left;
+ height: 30px;
+ width:280px;
+ border: none;
+}
+.logo_button{
+  background-image:url("images/images/images/2-1_03.png");
+  background-repeat: no-repeat;
+border: none;
+width: 30px;
+height: 32px;
+float: left;
+background-color: rgba(207,232,244,0.2);
+
+}
+#selete_kemu{
+  position: absolute;
+  left: 270px;
+  top:18px;
+}
+#selete_kemu p{
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #fff;
+}
+#menu{
+  width:260px;
+  height: 180px;
+  position: fixed;
+  left:150px;
+  top: 56px;
+ background-color: rgba(255,255,255,1);
+z-index: 1;
+border: 1px solid #f1f4f6;
+
+}
+.daohang{
+  position: relative;
+  width: 100%
+  height:25px;
+  margin-top: : 0px;
+ background-color: rgba(241,244,246,1);
+}
+.daohang p{
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  color: #92989e;
+  text-align: center;
+}
+.xuanzekemu{
+  position: relative;
+  margin:0px;
+
+}
+.grade{
+  width: 60px;
+  float: left;
+   position: relative;
+  margin-top: 0px;
+
+}
+.blue{
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  color: #4697e5;
+}
+.grade div
+{
+
+  width: 60px;
+}
+.grade div p{
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #92989e;
+  margin-top: 30px;
+  text-align: center;
+}
+.kemu{
+  width: 200px;
+  float: left;
+   position: relative;
+  margin-top: 0px;
+
+}
+.kemu div{
+  width: 200px;
+  margin: 20px;
+}
+
+.kemu div p{
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  color: #222;
+  margin-top: 30px;
+  display: inline;
+  margin:5px;
+
+}
+#left_menu{
+  position: relative;
+  margin-left:150px;
+  width: 200px;
+  height:640px;
+  background-image: url("images/images/images/3_03.jpg");
+  margin-top: -8px;
+  float: left;
+}
+.first_li{
+  position: absolute;
+  left: 5px;
+  top: 40px;
+  /*
+  list-style-image: url("images/images/images/2_11.png");
+  */
+  list-style: none;
+  width: 100%;
+}
+.first_li li{
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color:#d3d6da;
+  padding-top: 5px
+}
+.second_li2{
+  position:relative;
+  list-style: none;
+  margin-left:-25px;
+  margin-top: 5px;
+
+}
+.second_li2 li
+{
+  padding-top: 5px;
+}
+.third_li1{
+  position:relative;
+  list-style: none;
+  margin-left:-25px;
+  margin-top: 5px;
+}
+.third_li1 li
+{
+   font-family: "Microsoft YaHei";
+  font-size: 12px;
+  color:#d3d6da;
+  padding-top: 5px
+
+}
+.fourth_li3{
+ position:relative;
+  margin-left:-10px;
+  margin-top: 5px;
+  list-style: none;
+  list-style-type: disc;
+
+}
+.fourth_li3 li{
+  padding-top: 5px;
+
+}
+.lanbiao{
+  list-style-image: url("images/images/images/2_11.png");
+}
+#right_content{
+  position: relative;
+  margin-right: :150px;
+  margin-top: : 68px;
+  width:780px;
+  height:632px;
+  margin-left: 360px;
+}
+#excise_munu{
+  background-color: rgb(248,250,251);
+  position: relative;
+  margin-left: 0px;
+  margin-top:  8px;
+  width: 100%;
+  height: 165px;
+  overflow: hidden;
+}
+#excise_order{
+  background-color: rgb(248,250,251);
+  position: relative;
+  left: 0px;
+  margin-top: 5px;
+  width: 100%;
+  height: 36px;
+}
+.excise_content{
+  background-color: rgb(255,255,255);
+   position: relative;
+  left: 0px;
+  margin-top: 5px;
+  width: 100%;
+  height: 176px;
+}
+.excise_check{
+  background-color: rgb(248,250,251);
+  position: relative;
+  left: 0px;
+  margin-top: 2px;
+  width: 100%;
+  height: 28px;
+}
+.null_content{
+  height: 100%;
+  width:20px;
+  position: relative;
+  margin-left: 0px;
+  margin-top: 0px;
+  float: left;
+  background-color: rgb(248,250,251);
+  z-index: 1;
+}
+.excise_munu_content{
+  width: 800px;
+  height:100%;
+}
+.excise_choose{
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  border-bottom: 1px solid;
+  border-color: rgba(239,241,243,0.6);
+}
+.excise_logo{
+  width: 25px;
+  height: 20px;
+ position: relative;
+ margin-top: 12px;
+
+}
+.excise_logo2{
+  width: 20px;
+  height: 20px;
+ position: relative;
+ margin-top: 12px;
+ margin-left: 2px;
+}
+.excise_type{
+position: absolute;
+left: 200px;
+top: 10px;
+}
+.excise_type span{
+margin-right: 30px;
+ font-family: "Microsoft YaHei";
+color: #515559;
+font-size: 14px;
+}
+.excise_type1{
+  position: absolute;
+  left: 200px;
+  top: 50px;
+}
+
+.excise_type1 span{
+margin-right: 30px;
+ font-family: "Microsoft YaHei";
+color: #515559;
+font-size: 14px;
+}
+.excise_type2{
+  position: absolute;
+  left: 200px;
+  top: 90px;
+}
+
+.excise_type2 span{
+margin-right: 30px;
+ font-family: "Microsoft YaHei";
+color: #515559;
+font-size: 14px;
+}
+.excise_type3{
+  position: absolute;
+  left: 200px;
+  top: 130px;
+}
+
+.excise_type3 span{
+margin-right: 30px;
+ font-family: "Microsoft YaHei";
+color: #515559;
+font-size: 14px;
+}
+.order_choose{
+  width: 20px;
+  height: 30px;
+ position: relative;
+ margin-top: 6px;
+ margin-left: 24px;
+ float: left;
+
+}
+.order_text
+{
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #7f868d;
+  top: 5px;
+  left: 45px;
+  position: absolute;
+}
+.order_show{
+ font-family: "Microsoft YaHei";
+color: #515559;
+font-size: 14px;
+position: absolute;
+top: 5px;
+left: 130px;
+
+}
+.order_show span{
+  margin-right: 50px;
+}
+.excise_check div {
+float: left;
+}
+.excise_check div img{
+position: relative;
+margin-left: 5px;
+}
+.check_logo{
+  position: absolute;
+  left: 300px;
+}
+.check_text{
+   font-family: "Microsoft YaHei";
+color: #515559;
+font-size: 10px;
+
+}
+.times{
+  color: red;
+}
+.check_logo_1{
+  position: absolute;
+  left: 460px;
+}
+.excise_check_1 div {
+float: left;
+}
+.excise_check_1 div img{
+position: relative;
+margin-left: 5px;
+}
+.fonttype{
+    font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #7f868d;
+  position: absolute;
+  left: 50px;
+  top: 12px;
+}
+.fonttype1{
+    font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #7f868d;
+  position: absolute;
+  left: 50px;
+  top: 53px;
+}
+.fonttype2{
+    font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #7f868d;
+  position: absolute;
+  left: 50px;
+  top: 95px;
+}
+.fonttype3{
+    font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #7f868d;
+  position: absolute;
+  left: 50px;
+  top: 135px;
+}
+#blue_font{
+  color:#4697e5;
+}
+#blue_font2{
+  color:#4697e5;
+}
+#blue_font3{
+  color:#4697e5;
+}
+#blue_font1{
+  color:#4697e5;
+}
+footer ul{
+  position: absolute;
+  bottom: 10px;
+  right: 600px;
+}
+footer ul li
+{
+  list-style-type: none;
+  margin-right:  10px;
+  padding: 3px 15px;
+  border:1px solid;
+  float: left;
+  font-size: 12px;
+  text-align: center;
+  color: #4697e5;
+  border-color: #d8dee2;
+}
+
+</style>
+
+</head>
+<body>
+  <nav id="header">
+  <span  class ="logo_shiti"><img src="images/images/images/1_03.png"></span>
+  <span id="selete_kemu"><p>科目选择</p></span>
+  <span>
+  <form class="logo_search">
+   <input  class="logo_search_content" type="text"><input  class="logo_button" type="button"></input></input>
+
+  </form>
+  </span>
+  <span class="logo_pic"><img src="images/images/images/1_11.png"><img src="images/images/images/1_06.png"><img src="images/images/images/1_08.png"></span>
+</nav>
+
+
+  <article>
+    <div id="left_menu">
+      <ul class="first_li">
+        <li>数与代数</li>
+        <li class="lanbiao">数与代数
+          <ul class="second_li2">
+            <li class="lanbiao">数与代数(1)
+              <ul class="third_li1">
+                <li>数与代数(2)</li>
+                <li>数与代数(2)</li>
+                <li class="lanbiao">数与代数(2)
+                  <ul class="fourth_li3">
+                    <li>数与代数(3)</li>
+                    <li>数与代数(3)</li>
+                    <li>数与代数(3)</li>
+                    <li>数与代数(3)</li>
+                    <li>数与代数(3)</li>
+                    <li>数与代数(3)</li>
+                    <li>数与代数(3)</li>
+                    <li>数与代数(3)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          <li>数与代数(2)</li>
+          <li>数与代数(2)</li>
+        </ul>
+       </li>
+      </ul>
+    </div>
+    <div id="right_content">
+      <div id="excise_munu">
+       <div class="null_content"></div>
+       <div  class="excise_munu_content">
+         <div class="excise_choose">
+           <span ><img class="excise_logo" src="images/images/images/1_18.png "></span>
+           <span class="fonttype">题型</span>
+           <span class="excise_type">
+           <span id="blue_font"  >全选</span><span>单选题</span><span>解答题</span>
+           </span>
+         </div>
+         <div class="excise_choose">
+            <span ><img class="excise_logo2" src="images/images/images/1_22.png "></span>
+             <span class="fonttype1">试卷类型</span>
+           <span class="excise_type1" >
+           <span id="blue_font1"  >全选</span><span>真题</span><span>模拟题</span><span>其他</span>
+           </span>
+         </div>
+         <div class="excise_choose">
+             <span ><img class="excise_logo2" src="images/images/images/1_24.png "></span>
+             <span class="fonttype2">年份</span>
+           <span  class="excise_type2">
+           <span id="blue_font2" >全选</span><span>2016</span><span>2015</span><span>2014</span><span>2013</span>
+           </span>
+         </div>
+         <div  class="excise_choose" >
+             <span ><img class="excise_logo2"src="images/images/images/1_28.png "></span>
+              <span class="fonttype3">难度</span>
+           <span class="excise_type3">
+           <span  id="blue_font3" >全选</span><span>极容易</span><span>容易</span><span>中等</span><span>难</span><span>极难</span>
+           </span>
+         </div>
+       </div>
+      </div>
+        <div id="excise_order">
+         <div  class="order_choose"><img   src="images/images/images/1_32.png"></div>
+         <div class="order_text">排序</div>
+         <div class="order_show"><span>更新时间</span><span>错误率</span></div>
+       </div>
+        <div class="excise_content">
+          df
+        </div>
+        <div class="excise_check">
+           <div>
+             <img src="images/images/images/3_03.png ">
+           </div>
+           <div class="check_logo">
+             <div> <img src="images/images/images/1_45.png"></div>
+             <div class="check_text">被答过<span class="times">328</span>次</div>
+           </div>
+           <div  class="check_logo_1">
+             <div> <img src="images/images/images/1_42.png"></div>
+             <div class="check_text">正确率<span class="times">40%</span></div>
+           </div>
+        </div>
+        <div class="excise_content">d</div>
+        <div class="excise_check_1">
+           <div>
+             <img src="images/images/images/3_07.png ">
+           </div>
+           <div class="check_logo">
+             <div> <img src="images/images/images/1_45.png"></div>
+             <div class="check_text">被答过<span class="times">328</span>次</div>
+           </div>
+           <div  class="check_logo_1">
+             <div> <img src="images/images/images/1_42.png"></div>
+             <div class="check_text">正确率<span class="times">40%</span></div>
+           </div>
+         </div>
+        </div>
+  </article>
+
+  <footer >
+   <ul>
+     <li>1</li>
+     <li>2</li>
+     <li>3</li>
+     <li>4</li>
+     <li>5</li>
+     <li>6</li>
+     <li>下一页</li>
+   </ul>
+  </footer>
+</body>
+</html>
